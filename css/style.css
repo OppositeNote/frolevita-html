@@ -43,3 +43,11 @@ a {
 a:hover {
     color: black;
 }
+
+.panel-title {
+    color: white;
+}
+
+#panel-speelclub {
+    color: black;
+}
