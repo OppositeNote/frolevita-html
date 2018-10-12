@@ -4,39 +4,35 @@
         <title>Chiro Haacht | Afdelingen</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="img/chiro_logo.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="./css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./img/chiro_logo.png" type="image/x-icon"/>
     </head>
     <body>
         <header>
-            <nav class="navbar-default navbar-custom" style="padding:20px 20px 0px 20px; background: #E10026;">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-left" href="index.html"><img class="img img-responsive" width="50px" src="img/logo-wit-root_0.png"></a>
-                </div>
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav" id="navbar">
-                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                        <li><a id="current" href="afdelingen.html"><i class="fa fa-list" aria-hidden="true"></i>
+            <nav class="navbar navbar-expand-lg" style="padding:20px 20px 0px 20px; background: #E10026;">
+                <a class="navbar-brand" href="index.html"><img class="img img-responsive" width="50" height="50" src="img/logo-wit-root_0.png"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav" id="navbar">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="afdelingen.html" id="current"><i class="fa fa-list" aria-hidden="true"></i>
                                 Afdelingen</a></li>
-                        <li><a href="kalender.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="kalender.html"><i class="fa fa-calendar" aria-hidden="true"></i>
                                 Kalender</a></li>
-                        <li><a href="jaarthema.html"><i class="fa fa-reddit-alien" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="jaarthema.html"><i class="fa fa-question" aria-hidden="true"></i>
                                 Jaarthema</a></li>
-                        <li><a href="kampinfo.html"><i class="fa fa-fire" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="kampinfo.html"><i class="fa fa-fire" aria-hidden="true"></i>
                                 Kamp info</a></li>
-                        <li><a href="verhuur.html"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="verhuur.html"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                                 Verhuur</a></li>
-                        <li><a href="info.html"><i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="trooper.html"><i class="fa fa-eur"></i> Trooper</a></li>
+                        <li class="nav-item"><a class="nav-link" href="info.html"><i class="fa fa-info-circle" aria-hidden="true"></i>
                                 Info & Links</a></li>
-                        <li><a href="contact.html"><i class="fa fa-address-card" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card" aria-hidden="true"></i>
                                 Contact</a></li>
                     </ul>
                 </div>
@@ -52,15 +48,15 @@
                     <emph>Opgelet</emph>: Deze afdelingen hebben verschillende einduren.
                     </p>
 
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" style="background-color: #ff00ff;">
-                                <h4 class="panel-title" id="panel-pinkels">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#pinkels"><strong>Pinkels</strong></a>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #e800e8; cursor: pointer" data-toggle="collapse" href="#pinkels">
+                                <h4 id="panel-pinkels">
+                                    <a style="color: black; cursor: pointer"><strong>Pinkels</strong></a>
                                 </h4>
                             </div>
-                            <div id="pinkels" class="panel-collapse collapse">
-                                <div class="panel-body">
+                            <div id="pinkels" class="collapse" parent="=#accordion">
+                                <div class="card-body">
                                     <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                         <h3>Algemene info</h3>
                                         <ul>
@@ -104,21 +100,21 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <img src="img/leiding_pinkels.jpg" class="leiding img-responsive">
+                                    <div class="info">
+                                        <img src="img/leiding_pinkels.jpg" class="leiding img-fluid">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading" style="background-color: #ffff82;">
-                                <h4 class="panel-title" id="panel-speelclub">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#speelclub"><strong>Speelclub</strong></a>
+                        <div class="card">
+                            <div class="card-header" style="background-color: #ffff44; cursor: pointer" data-toggle="collapse" href="#speelclub">
+                                <h4 id="panel-speelclub">
+                                    <a style="color: black; cursor: pointer"><strong>Speelclub</strong></a>
                                 </h4>
                             </div>
-                            <div id="speelclub" class="panel-collapse collapse">
-                                <div class="panel-body">
+                            <div id="speelclub" class="collapse" parent="=#accordion">
+                                <div class="card-body">
                                     <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                         <h3>Algemene info</h3>
                                         <ul>
@@ -162,21 +158,21 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <img src="img/leiding_speelclub.jpg" class="leiding img-responsive">
+                                    <div class="info">
+                                        <img src="img/leiding_speelclub.jpg" class="leiding img-fluid">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading" style="background-color: #00bb00;">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion"href="#rakwi"><strong>Rakwi's</strong></a>
+                        <div class="card">
+                            <div class="card-header" style="background-color: #00bb00; cursor: pointer" data-toggle="collapse" href="#rakwi">
+                                <h4 id="panel-rakwi">
+                                    <a style="color: black; cursor: pointer"><strong>Rakwi's</strong></a>
                                 </h4>
                             </div>
-                            <div id="rakwi" class="panel-collapse collapse">
-                                <div class="panel-body">
+                            <div id="rakwi" class="collapse" parent="=#accordion">
+                                <div class="card-body">
                                     <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
                                         <h3>Algemene info</h3>
@@ -221,21 +217,21 @@
 
                                         </ul>
                                     </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <img class="leiding img-responsive" src=" img/leiding_rakwi.jpg"/>
+                                    <div class="info">
+                                        <img class="leiding img-fluid" src=" img/leiding_rakwi.jpg"/>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading" style="background-color: #ff4949;">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion"href="#tito"><strong>Tito's</strong></a>
+                        <div class="card">
+                            <div class="card-header" style="background-color: #ff4242; cursor: pointer" data-toggle="collapse" href="#tito">
+                                <h4 id="panel-tito">
+                                    <a style="color: black; cursor: pointer"><strong>Tito's</strong></a>
                                 </h4>
                             </div>
-                            <div id="tito" class="panel-collapse collapse">
-                                <div class="panel-body">
+                            <div id="tito" class="collapse" parent="=#accordion">
+                                <div class="card-body">
                                     <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                         <h3>Algemene info</h3>
                                         <ul>
@@ -280,20 +276,20 @@
 
                                         </ul>
                                     </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <img class="leiding img-responsive" src=" img/leiding_tito.jpg">
+                                    <div class="info">
+                                        <img class="leiding img-fluid" src=" img/leiding_tito.jpg">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" style="background-color: #5b5bff;">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion"href="#keti"><strong>Keti's</strong></a>
+                        <div class="card">
+                            <div class="card-header" style="background-color: #6d6dff; cursor: pointer" data-toggle="collapse" href="#keti">
+                                <h4 id="panel-keti">
+                                    <a style="color: black; cursor: pointer"><strong>Keti's</strong></a>
                                 </h4>
                             </div>
-                            <div id="keti" class="panel-collapse collapse">
-                                <div class="panel-body">
+                            <div id="keti" class="collapse" parent="=#accordion">
+                                <div class="card-body">
                                     <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
                                         <h3>Algemene info</h3>
@@ -331,20 +327,20 @@
 
                                         </ul>
                                     </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <img class="leiding img-responsive" src=" img/leiding_keti.jpg">
+                                    <div class="info">
+                                        <img class="leiding img-fluid" src=" img/leiding_keti.jpg">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" style="background-color: #ffbc49;">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion"href="#aspi"><strong>Aspi's</strong></a>
+                        <div class="card">
+                            <div class="card-header" style="background-color: #ffa100; cursor: pointer" data-toggle="collapse" href="#aspi">
+                                <h4 id="panel-aspi">
+                                    <a style="color: black; cursor: pointer"><strong>Aspi's</strong></a>
                                 </h4>
                             </div>
-                            <div id="aspi" class="panel-collapse collapse">
-                                <div class="panel-body">
+                            <div id="aspi" class="collapse" parent="=#accordion">
+                                <div class="card-body">
                                     <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
                                         <h3>Algemene info</h3>
@@ -382,18 +378,18 @@
 
                                         </ul>
                                     </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <img class="leiding img-responsive" src=" img/leiding_aspi.jpg">
+                                    <div class="info">
+                                        <img class="leiding img-fluid" src=" img/leiding_aspi.jpg">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 well">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card">
                     <h2>Nieuws</h2>
                     <p>Like onze <a target="_blank" href="https://facebook.com/chiro.frolevitahaacht">Facebook-pagina</a> om op de hoogte te blijven van de laatste nieuwtjes en interessante evenementen!</p>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchiro.frolevitahaacht%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchiro.frolevitahaacht%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
                 </div>
             </div>
         </div>

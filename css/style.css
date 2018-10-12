@@ -4,12 +4,16 @@ body{
 
 .navbar-default {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
 }
 
 #navbar > li > a {
     color: white;
 }
+
+#navbar > li >a > i {
+    margin-left: 5px;
+  }  
 
 #navbar > li > a#current{
     background-color: white;
@@ -24,7 +28,7 @@ body{
 }
 
 .navbar-brand {
-    margin-top: -2.5rem;
+    margin-top: -1.3rem;
 }
 
 ul ul {
@@ -44,12 +48,30 @@ a:hover {
     color: black;
 }
 
-.panel-title {
+.card > a {
     color: black;
 }
 
-.img-home {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+.card-header > a {
+    color: black;
+}
+
+.img-carousel {
+    border-radius: 10px;
+    width: inherit;
+    height: inherit;
+}
+
+.text-carousel {
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.text-carousel > a {
+    color: white;
+    text-decoration: underline;
 }
 

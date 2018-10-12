@@ -4,39 +4,35 @@
         <title>Chiro Haacht | Ça va?!</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/bootstrap.min.css" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" href="./img/chiro_logo.png" type="image/x-icon"/>
     </head>
     <body>
         <header>
-            <nav class="navbar-default navbar-custom" style="padding:20px 20px 0px 20px; background: #E10026;">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-left" href="index.html"><img class="img img-responsive" width="50px" src="img/logo-wit-root_0.png"></a>
-                </div>
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav" id="navbar">
-                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                        <li><a href="afdelingen.html"><i class="fa fa-list" aria-hidden="true"></i>
+            <nav class="navbar navbar-expand-lg" style="padding:20px 20px 0px 20px; background: #E10026;">
+                <a class="navbar-brand" href="index.html"><img class="img img-responsive" width="50" height="50" src="img/logo-wit-root_0.png"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav" id="navbar">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="afdelingen.html"><i class="fa fa-list" aria-hidden="true"></i>
                                 Afdelingen</a></li>
-                        <li><a href="kalender.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="kalender.html"><i class="fa fa-calendar" aria-hidden="true"></i>
                                 Kalender</a></li>
-                        <li><a href="jaarthema.html" id="current"><i class="fa fa-reddit-alien" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="jaarthema.html" id="current"><i class="fa fa-question" aria-hidden="true"></i>
                                 Jaarthema</a></li>
-                        <li><a href="kampinfo.html"><i class="fa fa-fire" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="kampinfo.html"><i class="fa fa-fire" aria-hidden="true"></i>
                                 Kamp info</a></li>
-                        <li><a href="verhuur.html"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="verhuur.html"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                                 Verhuur</a></li>
-                        <li><a href="info.html"><i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="trooper.html"><i class="fa fa-eur"></i> Trooper</a></li>
+                        <li class="nav-item"><a class="nav-link" href="info.html"><i class="fa fa-info-circle" aria-hidden="true"></i>
                                 Info & Links</a></li>
-                        <li><a href="contact.html"><i class="fa fa-address-card" aria-hidden="true"></i>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card" aria-hidden="true"></i>
                                 Contact</a></li>
                     </ul>
                 </div>
@@ -51,14 +47,14 @@
                     <p><a target="_blank" href="https://chiro.be/over-chiro/spelletjes-en-liedjes/zoek-een-lied/jaarthemalied-ca-va">Het jaarthemalied!</a></p>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <img class="img img-responsive" style="padding: 20px;"
+                    <img class="img img-fluid" style="padding: 20px;"
                                                     src="./img/jaarthema_opnaaier.png"
                                                     width=2200rem/>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 well" >
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card" >
                     <h2>Nieuws</h2>
                     <p>Like onze <a target="_blank" href="https://facebook.com/chiro.frolevitahaacht">Facebook-pagina</a> om op de hoogte te blijven van de laatste nieuwtjes en interessante evenementen!</p>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchiro.frolevitahaacht%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchiro.frolevitahaacht%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
                 </div>
             </div>
         </div>
